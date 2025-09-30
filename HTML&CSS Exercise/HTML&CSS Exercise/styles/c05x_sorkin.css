@@ -1,0 +1,62 @@
+html {
+    background-color: yellow;
+}
+body {
+    background: white;
+    width: 650px;
+    border: 5px double blue;
+    margin: 40px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body img{
+    float: left;
+    margin: 0px 15px 15px 0px;
+}
+
+main h1 {
+    color: blue;
+    font-size: 28px;
+}
+
+main h2 {
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+}
+
+main h3{
+    font-size: 18px;
+}
+
+main p blockquote ul li{
+    margin: 10px;
+}
+
+main p{
+    text-align: left;
+    margin: 20px;
+}
+
+main blockquote{
+    margin: 15px;
+}
+
+main p cite{
+    display: block;
+    font-style: normal;
+    text-align: right;
+    color: blue;
+}
+
+footer hr{
+    color: blue;
+    border-bottom: 2px solid;
+}
+
+footer p{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}

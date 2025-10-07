@@ -1,0 +1,102 @@
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+
+.table1 {
+  width: 500px;
+}
+
+.table2 {
+  width: 600px;
+}
+
+
+.container {
+  width: fit-content;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-left: 40px;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 6px 6px 15px grey;
+  border-radius: 0;
+}
+
+
+caption {
+  caption-side: top;
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.table1 td, .table1 th {
+  text-align: left;
+}
+.table1 td:nth-child(3), .table1 th:nth-child(3) {
+  text-align: right;
+}
+
+
+.table2 td, .table2 th {
+  text-align: left; /* default */
+}
+
+
+.table2 td:nth-child(2),
+.table2 td:nth-child(3) {
+  text-align: left;
+}
+
+
+.table2 td:last-child {
+  text-align: right;
+}
+
+
+.table2 th:nth-child(4) {
+  text-align: left;
+}
+
+
+.table2 tr:last-child th {
+  text-align: right;
+}
+.table2 tr:last-child td {
+  text-align: right;
+}
+
+
+.plain {
+  background-color: transparent !important;
+  vertical-align: top; 
+}
+
+/*Table 1 Styling*/
+.table1 th {
+  background-color: yellow;
+}
+.table1 tr:nth-child(n+2):nth-child(odd) td {
+  background-color: yellow;
+}
+
+/*Table 2 Styling */
+.table2 tr:first-child th {
+  background-color: yellow;
+}
+.table2 tr:last-child th,
+.table2 tr:last-child td {
+  background-color: yellow;
+}
+.table2 tr:nth-child(n+2):nth-child(odd) td {
+  background-color: yellow;
+}

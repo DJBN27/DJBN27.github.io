@@ -1,0 +1,106 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, blue, lightblue);
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+/* Main */
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* About me section text*/
+.about-text{
+  text-indent: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: justify;
+  
+
+}
+
+/* Profile picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  object-fit: cover;
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  color: blue;
+  margin-bottom: 10px;
+  border-bottom: 2px solid blue;
+  display: inline-block;
+}
+
+/* Hobbies list */
+.hobby-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hobby-list li {
+  background: lightblue;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: blue;
+  color: white;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+  main {
+    width: 95%;
+    padding: 10px;
+  }
+}
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkmode Lightmode</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="darkmode.css">
+</head>
+<body>
+    <div id="dark-mode">
+    <h3>Darkmode</h3>
+    <h3>Lightmode</h3>
+    <button id="toggle-theme">Toggle Darkmode</button>
+    </div>
+    <script>
+        $("#toggle-theme").toggle(function(){
+        $("dark-mode").toggle()
+        });
+    </script>
+</body>
+</html>

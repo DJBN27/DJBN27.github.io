@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html and Java</title>
+</head>
+<body>
+    <h3>Halloween</h3>
+    <button id="halloween" onclick="chgBack1()">Click Here</button>
+    <button id="reset" onclick="reset()">Reset</button>
+    <h3>Christmas</h3>
+    <button id="christmas" onclick="chgBack2()">Click Here</button>
+    <button id="reset" onclick="reset()">Reset</button>
+    <h3>New Year</h3>
+    <button id="newyear" onclick="chgBack3()">Click Here</button>
+    <button id="reset" onclick="reset()">Reset</button>
+    
+    <div id="info"></div>
+    <script>
+       function chgBack1(){
+        document.getElementById('info').innerHTML = '<p>Halloween</p><img src="" alt="temp">'
+       };
+       function chgBack2(){
+        document.getElementById('info').innerHTML = '<p>Christmas</p><img src="" alt="temp">'
+       }
+       function chgBack3(){
+        document.getElementById('info').innerHTML ='<p>New years</p><img src="" alt="temp">'
+       }
+       function reset(){
+        document.getElementById('info').innerHTML = ''
+       }
+       
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+html {
+    background-color: lightcyan;
+}
+body{
+    font-family: Cambria;
+}
+/*Banner*/
+.header-container {
+    width: 100%;
+}
+.h1Size {
+    font-size: 45px;
+    color: goldenrod;
+    text-align: center;
+}
+header {
+    background: black;
+    padding: 1px 0 0 0;
+}
+
+header p {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: -2px;
+}
+/*Navigation menu*/
+.menu-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.menu-container nav ul{
+    display: flex;
+    list-style: none;
+}
+.menu-container nav ul li{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding: 10px 30px;
+}
+.menu-container nav ul li a{
+    color: #AAAAAA;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.menu-container nav ul li a:hover {
+    color: goldenrod;
+}
+/*Schedule*/
+.container {
+    width: 700px;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px;
+    margin: 10px;
+    margin: 30px auto;
+    padding: 5px;
+}
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: brown;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 5px;
+}
+.left-team {
+    display: flex;
+    flex-direction: row;
+}
+.team-right{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.team-logo{
+    width: 22px;
+    height: 22px;
+}
+.vs {
+    color: grey;
+}
+.date-time {
+    display: flex;
+    padding: 10px;
+}
+/*Footer*/
+footer {
+    border-top: 1px solid black;
+    background: black;
+}
+
+footer h3 {
+    padding-left: 10px;
+    color: grey;
+}
+
+footer ul {
+    line-height: 1.5;
+}
+
+footer a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: darkgoldenrod;
+}
+/*Contact icons*/
+div.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+div.contact_icon i {
+    display: flex;
+    line-height: 1.5;
+    font-size: 20px;
+}

@@ -1,0 +1,278 @@
+html {
+    background-color: lightcyan;
+}
+body {
+    font-family: Cambria;
+    background: linear-gradient(90deg, 
+        rgba(173, 216, 230, 0.1) 0%, 
+        rgba(255, 255, 255, 1) 15%, 
+        rgba(255, 255, 255, 1) 85%, 
+        rgba(173, 216, 230, 0.1) 100%);
+    position: relative;
+    cursor: url('../Soccerball.cur'), auto;
+}
+/*Banner*/
+.header-container {
+    width: 100%;
+}
+.h1Size {
+    font-size: 45px;
+    color: goldenrod;
+    text-align: center;
+}
+header {
+    background: black;
+    padding: 1px 0 5px 0;
+}
+
+header p {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: -2px;
+}
+/*Navigation menu*/
+.menu-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    /*Prevent dropdown covered by slides*/
+    z-index: 1000 !important;
+    cursor: url('../Pointer.cur'), auto;
+}
+.menu-container nav ul{
+    display: flex;
+    list-style: none;
+}
+.menu-container nav ul li{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding: 10px 30px;
+    position: relative;
+}
+.menu-container nav ul li a{
+    color: #AAAAAA;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: url('../Pointer.cur'), auto;
+}
+
+.menu-container nav ul li a:hover {
+    color: goldenrod;
+}
+/*Dropdown menu*/
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    min-width: 680px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 4px;
+    z-index: 9999; 
+    cursor: url('../Pointer.cur'), auto;
+}
+.grid{
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 8px 13px; /*space between row and column*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.grid li a{
+    display: block;
+    text-decoration: none;
+    transition: all 0.3 ease; 
+    cursor: url('../Pointer.cur'), auto;  
+}
+/* Show dropdown on hover */
+.menu-container nav ul li:hover .dropdown-menu {
+    display: grid;
+}
+/*main style*/
+
+/*slide style*/
+.slide-container{
+    max-width: 1750px; 
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    margin: 10px auto;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+.slide-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slide-fade{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: none;
+    transform: translateX(100%);
+    transition: all 0.8s ease;
+}
+.slide-fade.active {
+    opacity: 1;
+    display: block;
+    transform: translateX(0);
+}
+.slide-fade.prev {
+    opacity: 1;
+    display: block;
+    transform: translateX(-100%);
+}
+.slide-fade img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section h2{
+    font-size: 35px;
+    text-align: center;
+}
+.intro{
+    text-align: center;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.control-container{
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+.control-header{
+    font-weight: bold;
+    font-size: 26px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #AAAAAA;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+.control-header:hover{
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    transition: all 0.3s ease;
+
+}
+.control-header i:first-child{
+    font-style: normal;
+}
+.control-header .fa-chevron-down{
+    transition: transform 0.3 ease;
+    color: grey;
+}
+.control-header.active .fa-chevron-down{
+    transform: rotate(180deg);
+    color: goldenrod;
+}
+.control-header.active {
+    border-color: goldenrod;
+}
+.control-content{
+    max-height: 0;
+    font-size: 19px;
+    line-height: 1.5;
+    transition: max-height 0.3s ease-out;
+    border: 1px solid #fff1e6;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    background-color: white;
+    overflow: hidden;
+}
+.control-content ul{
+    line-height: 1.5;
+    padding-left: 40px;
+}
+.control-content p{
+    margin-left: 28px;
+    line-height: 1.5;
+}
+.control-content li{
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+.team-info{
+    padding-left: 40px;
+}
+.members-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.team-member{
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+.team-member:hover{
+    transform: translateY(-5%);
+}
+.team-member p{
+    margin: 0;
+}
+.team-member p{
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/*Footer*/
+footer {
+    border-top: 1px solid black;
+    background: black;
+}
+
+footer h3 {
+    padding-left: 10px;
+    color: grey;
+}
+
+footer ul {
+    line-height: 1.5;
+}
+
+footer a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: darkgoldenrod;
+}
+/*Contact icons*/
+div.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+div.contact_icon i {
+    display: flex;
+    line-height: 1.5;
+    font-size: 20px;
+}

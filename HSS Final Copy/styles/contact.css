@@ -1,0 +1,187 @@
+html {
+    background-color: lightcyan;
+}
+body {
+    font-family: Cambria;
+    cursor: url('../Soccerball.cur'), auto;
+}
+/*Banner*/
+.header-container {
+    width: 100%;
+}
+.h1Size {
+    font-size: 45px;
+    color: goldenrod;
+    text-align: center;
+}
+header {
+    background: black;
+    padding: 1px 0 0 0;
+}
+
+header p {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: -2px;
+}
+/*Navigation menu*/
+.menu-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    cursor: url('../Pointer.cur'), auto;
+}
+.menu-container nav ul{
+    display: flex;
+    list-style: none;
+}
+.menu-container nav ul li{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding: 10px 30px;
+    position: relative;
+}
+.menu-container nav ul li a{
+    color: #AAAAAA;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.menu-container nav ul li a:hover {
+    color: goldenrod;
+}
+/*Dropdown menu*/
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    min-width: 680px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 4px; 
+}
+.grid{
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 8px 13px; /*space between row and column*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.grid li a{
+    display: block;
+    text-decoration: none;
+    transition: all 0.3 ease;   
+}
+/* Show dropdown on hover */
+.menu-container nav ul li:hover .dropdown-menu {
+    display: grid;
+}
+
+main{
+    text-align: center;
+}
+
+.menu a:hover {
+    color: goldenrod;
+    background-color: lightgrey;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.name-fields input {
+  flex: 1;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/*Footer*/
+footer {
+    border-top: 1px solid black;
+    background: black;
+}
+
+footer h3 {
+    padding-left: 10px;
+    color: grey;
+}
+
+footer ul {
+    line-height: 1.5;
+}
+
+footer a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: darkgoldenrod;
+}
+/*Contact icons*/
+div.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+div.contact_icon i {
+    display: flex;
+    line-height: 1.5;
+    font-size: 20px;
+}
+/*Search Bar*/
+.search{
+    background-color: lightcyan;
+    text-align:end;
+    padding-top: 3px;
+    padding-right: 3px;
+}

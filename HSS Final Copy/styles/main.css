@@ -3,6 +3,7 @@ html {
 }
 body {
     font-family: Cambria;
+    cursor: url('../Soccerball.cur'), auto;
 }
 /*Banner*/
 .header-container {
@@ -32,6 +33,7 @@ header p {
     display: flex;
     justify-content: center;
     padding: 0;
+    cursor: url('../Pointer.cur'), auto;
 }
 .menu-container nav ul{
     display: flex;
@@ -50,6 +52,7 @@ header p {
     font-weight: bold;
     border-radius: 4px;
     transition: all 0.3s ease;
+    cursor: url('../Pointer.cur'), auto;
 }
 
 .menu-container nav ul li a:hover {
@@ -65,6 +68,7 @@ header p {
     background-color: black;
     padding: 5px;
     border-radius: 4px; 
+    cursor: url('../Pointer.cur'), auto;
 }
 .grid{
     display: grid !important;
@@ -78,7 +82,48 @@ header p {
 .grid li a{
     display: block;
     text-decoration: none;
-    transition: all 0.3 ease;   
+    transition: all 0.3 ease;  
+    cursor: url('../Pointer.cur'), auto; 
+}
+/*slide style*/
+.slide-container{
+    max-width: 1750px; 
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    margin: 10px auto;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+.slide-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slide-fade{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: none;
+    transform: translateX(100%);
+    transition: all 0.8s ease;
+}
+.slide-fade.active {
+    opacity: 1;
+    display: block;
+    transform: translateX(0);
+}
+.slide-fade.prev {
+    opacity: 1;
+    display: block;
+    transform: translateX(-100%);
+}
+.slide-fade img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /* Show dropdown on hover */
 .menu-container nav ul li:hover .dropdown-menu {
@@ -126,10 +171,12 @@ div.contact_icon i {
 }
 /*table css*/
 table {
-  border-collapse: collapse; /* makes borders merge neatly */
+  border-collapse: separate; /* makes borders merge neatly */
   width: 100%;
   margin-bottom: 2rem;       /* space below each table */
   font-family: Arial, sans-serif;
+  /* hiding empty cells */
+  empty-cells: hide;
 }
 
 th, td {
@@ -147,5 +194,22 @@ tbody tr {
   height: 40px; /* sets consistent row height */
 }
 td {
-    background-color: white;
+    background-color: white;
+}
+
+/*Search Bar and Results*/
+#results {
+border: 1px solid #ccc;
+max-width: 200px;
+background: #fff;
+position: absolute;
+}
+
+#results div {
+padding: 5px;
+cursor: pointer;
+}
+
+#results div:hover {
+background: #f0f0f0; 
 }

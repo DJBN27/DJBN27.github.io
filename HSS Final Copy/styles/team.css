@@ -1,0 +1,123 @@
+html {
+    background-color: lightcyan;
+}
+body {
+    font-family: Cambria;
+    cursor: url('../Soccerball.cur'), auto;
+}
+/*Banner*/
+.header-container {
+    width: 100%;
+}
+.h1Size {
+    font-size: 45px;
+    color: goldenrod;
+    text-align: center;
+}
+header {
+    background: black;
+    padding: 1px 0 0 0;
+}
+
+header p {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: -2px;
+}
+/*Navigation menu*/
+.menu-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.menu-container nav ul{
+    display: flex;
+    list-style: none;
+}
+.menu-container nav ul li{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding: 10px 30px;
+    position: relative;
+}
+.menu-container nav ul li a{
+    color: #AAAAAA;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.menu-container nav ul li a:hover {
+    color: goldenrod;
+}
+/*Dropdown menu*/
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    min-width: 680px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 4px; 
+}
+.grid{
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 8px 13px; /*space between row and column*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.grid li a{
+    display: block;
+    text-decoration: none;
+    transition: all 0.3 ease;   
+}
+/* Show dropdown on hover */
+.menu-container nav ul li:hover .dropdown-menu {
+    display: grid;
+}
+
+/*Footer*/
+footer {
+    border-top: 1px solid black;
+    background: black;
+}
+
+footer h3 {
+    padding-left: 10px;
+    color: grey;
+}
+
+footer ul {
+    line-height: 1.5;
+}
+
+footer a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: darkgoldenrod;
+}
+/*Contact icons*/
+div.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+div.contact_icon i {
+    display: flex;
+    line-height: 1.5;
+    font-size: 20px;
+}
